@@ -84,6 +84,17 @@ if ($WindowsPrincipal.IsInRole([System.Security.Principal.WindowsBuiltInRole]::A
     choco install -y rapidee
     choco install -y windirstat
 
+    # Setup git to use beyond compare as diff tool
+    git config --global diff.tool bc
+    git config --global difftool.bc.path "c:/Program Files/Beyond Compare 4/bcomp.exe"
+
+    # Setup beyond compare as merge tool
+    git config --global merge.tool bc
+    git config --global mergetool.bc.path "c:/Program Files/Beyond Compare 4/bcomp.exe"
+
+    # Disable the "Launch 'bc3' [Y/n]?" prompt
+    git config --global difftool.prompt false
+
     # Windows Subsystem for Linux version 2 (WSL2) connects to VcXSrv
     # via a RFC 1918 IP address (i.e. 172.16/12 or 192.168/16) instead
     # of a local loopback address like WSL1, and so our script will
