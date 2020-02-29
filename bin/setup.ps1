@@ -80,6 +80,7 @@ if ($WindowsPrincipal.IsInRole([System.Security.Principal.WindowsBuiltInRole]::A
     # choco install -y winmerge # beyond compare instead
     choco install -y beyondcompare
 
+    choco install -y greenshot
     choco install -y keepass
     choco install -y rapidee
     choco install -y windirstat
