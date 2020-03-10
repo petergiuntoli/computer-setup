@@ -70,7 +70,6 @@ if ($WindowsPrincipal.IsInRole([System.Security.Principal.WindowsBuiltInRole]::A
     choco install -y keybase
     choco install -y nircmd
     # choco install -y notepad2 # sublimetext3 instead
-    choco install -y sublimetext3
     choco install -y ripgrep
     choco install -y shellcheck
     choco install -y sysinternals
@@ -78,11 +77,13 @@ if ($WindowsPrincipal.IsInRole([System.Security.Principal.WindowsBuiltInRole]::A
     choco install -y vcxsrv
     choco install -y vscode
     # choco install -y winmerge # beyond compare instead
-    choco install -y beyondcompare
 
+    choco install -y beyondcompare
     choco install -y greenshot
     choco install -y keepass
+    choco install -y paint.net
     choco install -y rapidee
+    choco install -y sublimetext3
     choco install -y windirstat
 
     # Setup git to use beyond compare as diff tool
