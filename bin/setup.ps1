@@ -81,6 +81,8 @@ if ($WindowsPrincipal.IsInRole([System.Security.Principal.WindowsBuiltInRole]::A
     choco install -y beyondcompare
     choco install -y greenshot
     choco install -y keepass
+    choco install -y obs-studio
+    choco install -y openshot
     choco install -y paint.net
     choco install -y rapidee
     choco install -y sublimetext3
